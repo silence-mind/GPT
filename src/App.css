@@ -1,0 +1,53 @@
+* {
+  box-shadow: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000100;
+}
+a {
+  color: unset;
+}
+
+.gradient__bg {
+  background: linear-gradient(
+    60deg,
+    #011119,
+    #064259,
+    #011119,
+    #032835,
+    #011119
+  );
+  background-size: 300% 300%;
+  animation: color 15s ease-in-out infinite;
+}
+
+@keyframes color {
+  0% {
+    background-position: 0 10%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.gradient__text {
+  background: var(--gradint-text);
+  background-clip: text;
+  -webkit-background-clop: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section__padding {
+  padding: 4rem 6rem;
+}
+
+.section__margin {
+  padding: 4rem 6rem;
+}

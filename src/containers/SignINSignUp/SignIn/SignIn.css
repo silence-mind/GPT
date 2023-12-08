@@ -1,0 +1,148 @@
+.Sign_in-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.form_sign-in h1 {
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+
+.form_sign-in {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  height: 20rem;
+  width: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0.9;
+  position: absolute;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(255, 255, 255, 0.1) 0px -79px 40px 0px inset,
+    rgba(185, 185, 203, 0.25) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(255, 255, 255, 0.09) 0px 8px 4px,
+    rgba(255, 253, 253, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  transition: 1s ease-in;
+}
+.form_sign-in:hover {
+  border: 2px solid var(--color-blog);
+}
+
+.input_email {
+  margin-right: 4rem;
+}
+.input_email label {
+  color: #fff;
+  margin: 1rem;
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-size: 1.4rem;
+}
+
+.input_email input {
+  padding: 0.3rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.input_password {
+  margin-right: 5.3rem;
+}
+
+.input_password label {
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-size: 1.4rem;
+  margin-right: 0.5rem;
+}
+
+.input_password input {
+  padding: 0.3rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.bn13 {
+  display: inline-block;
+  padding: 0.65em 1.6em;
+  border: 3px solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-weight: bold;
+  color: #111;
+  text-align: center;
+  margin-top: 1rem;
+  border-radius: 5px;
+  transition: all 0.2s;
+  animation: bn13bouncy 5s infinite linear;
+  position: relative;
+}
+
+.bn13:hover {
+  background-color: white;
+  color: #000000;
+}
+
+@keyframes bn13bouncy {
+  0% {
+    top: 0em;
+  }
+  40% {
+    top: 0em;
+  }
+  43% {
+    top: -0.9em;
+  }
+  46% {
+    top: 0em;
+  }
+  48% {
+    top: -0.4em;
+  }
+  50% {
+    top: 0em;
+  }
+  100% {
+    top: 0em;
+  }
+}
+
+.bn45 {
+  width: 170px;
+  height: 50px;
+  margin-top: 1rem;
+}
+
+.forget_password p {
+  color: #fff;
+  font-size: 1rem;
+  font-family: var(--font-family);
+  margin: 1rem;
+}
+
+.forget_password span {
+  display: inline-block;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--font-family);
+  color: var(--color-text);
+}
+
+@media screen and(max-with:499px) {
+  .form_sign-in {
+    height: 15rem;
+    width: 20rem;
+  }
+}
